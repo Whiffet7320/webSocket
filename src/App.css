@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+.App{
+  position: fixed;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  margin-bottom: 20px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header input{
+  width: 300px;
+  margin-right: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  border: 1px solid #ccc;
+  width: 500px;
+  height: 365px;
+  overflow: auto;
+}
+.container .newMesssage span{
+  font-size: 16px;
+}
+.container .newMesssage span.ws{
+  font-size: 16px;
+  color: #f40;
+}
+.container .newMesssage span.client{
+  font-size: 16px;
+  color: green;
+}
+.container .newMesssage span.server{
+  font-size: 16px;
+  color: blue;
+}
+.container .newMesssage span.close{
+  font-size: 16px;
+  color: #f40;
+}
+.footer{
+  margin-top: 20px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer input{
+  width: 86%;
 }
